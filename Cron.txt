@@ -1,0 +1,8 @@
+@hourly ~/bin/MemcacheOutputFile
+
+File:
+#!/bin/bash
+memccat --servers=localhost `memcdump --servers=localhost` >> ~/Memcached_output/Memcached-SEARCH-$(date +"%y-%m-%d")
+
+
+
